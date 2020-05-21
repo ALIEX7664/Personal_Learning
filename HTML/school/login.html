@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:>
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="login_css.css">
+    <script>
+        function answerqus(value) {
+            var choice = document.getElementById("choicean");
+            if(value == 0)
+            {
+                choice.style.display="none";
+            }
+            else {
+                choice.style.display="block";
+            }
+        }
+    </script>
+    <title>清水河畔-登录</title>
+</head>
+<body>
+<div class="header">
+    <div class="hearder_top">
+        <img src="photo/stuhome_logo.gif" class="img_logo">
+        <ul class="ul_head">
+            <a href="#"style="color: gray;" ><li >清水河畔</li></a>
+            <a href="#"style="color: #3495f3;"><li >客户端下载</li></a>
+        </ul>
+        <ul class="ul_head_2">
+            <li><a href="login.html">登录</a></li>
+            <li><a href="register.html">立即注册</a></li>
+        </ul>
+    </div>
+    <div class="header_middle">
+        <div class="head_search">
+            <input type="text"  size="45" class="search" value="请输入搜索内容" onfocus="javascript:this.value=''" >
+            <button class="head_submit" >搜索</button>
+        </div>
+        <div class="logo"></div>
+        <div class="logo_nav">快捷导航</div>
+    </div>
+
+    <div class="header_bottom">
+        <ul class="nav_list">
+            <li ><a href="#" style="color: orange">校园服务</a></li>
+            <li><a href="#">论坛服务</a></li>
+            <li><a href="#">成电校园</a></li>
+            <li><a href="#">科技交流</a></li>
+            <li><a href="#">休闲娱乐</a></li>
+            <li><a href="#">跳蚤市场</a></li>
+            <li><a href="#" style="color: purple">河畔商城</a></li>
+        </ul>
+    </div>
+</div>
+<div class="content">
+    <div class="content_head">
+        <span style="margin-left: 10px;font-weight: bold;color: gray;">登录</span>
+        <a href="register.html" style="color: #3495f3;font-size: 12px;margin-right: 10px;float: right;">没有账号?现在注册</a>
+    </div>
+    <form class="content_mid" id="formcheck">
+        <table>
+            <tr><td class="td1"><sup>*</sup>用户名:</td><td><input  size="40" name="name" type="text" onblur="checkname()" required></td><td id="vename">用户名由3到15个字符组成</td></tr>
+            <tr><td class="td1"><sup>*</sup>密码:</td><td><input size="40" name="pswd" type="password"onblur="checkcode()" required></td><td id="vepswd">密码最小长度为6个字符</td></tr>
+            <tr><td class="td1"><sup>*</sup>安全提问</td><td id="answer">
+                <select style="margin-left: 20px" onchange="answerqus(this.value)">
+                    <option value="0">未设置安全问题（忽略）</option>
+                    <option value="1">母亲的名字</option>
+                    <option value="2">爷爷的名字</option>
+                    <option value="3">出生的城市</option>
+                </select>
+                <br>
+                <input type="text" size="40" id="choicean" style="display: none" required>
+            </td>
+
+            </td><td id="veagpswd"></td></tr>
+        </table>
+        <button class="but" type="submit" onclick="">登录</button>
+    </form>
+
+</div>
+<div class="under">
+    <div class="line">
+        <div class="under_nav">
+
+            <a href="#"><img src="photo/site_qq.jpg" style="position: absolute;left: 10px;margin-top: 3px; "></a>
+            <ul>
+                <li style="border-left: 1px solid gray;"><a href="#">手机版</a></li>
+                <li><a href="#">小黑屋</a></li>
+                <li style="border-right: none"><a href="#" style="font-weight: bold">清水河畔－电子科技大学官方论坛</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="end">
+        <p> Powered by <span style="font-weight: bold;">Discuz</span>! X3.4 © 1998-2017 StarStudio</p>
+        GMT+8, 2019-10-23 22:21 , Processed in 0.033145 second(s), 10 queries , Gzip On.
+        <img src="photo/pic.gif">
+    </div>
+</div>
+</body>
+</html>

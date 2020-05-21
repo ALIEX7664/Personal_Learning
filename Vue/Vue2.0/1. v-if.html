@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>v-if</title>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<p>Username：{{name}}</p>
+			<h1 v-if="isVip">Vip</h1>
+			
+			<button @click="getElement">click me</button>
+		</div>
+		<script type="text/javascript">
+			let vue = new Vue({
+				el:'#app',
+				data:{
+					name:'Aliex',
+					isVip:true
+				},
+				methods:{
+					getElement:function(e)
+					{
+						console.log(e);
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

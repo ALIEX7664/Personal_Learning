@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>v-for</title>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<li v-for="item in names">{{item}}</li>
+			
+			
+			<!-- 输出数组第一位，在数组一个下标里循环输出 -->
+			<li v-for="student in students[0]">{{student}}</li>
+			<!-- 错误写法 -->
+			<li v-for="student in students">{{student}}</li>
+			
+			<!-- 正确写法 -->
+			<li v-for="name in students">{{name.name}} --{{name.age}}</li>
+		
+			<!-- 获取键值 -->
+			<li v-for="stu,key in students">{{key}}--{{stu}}</li>
+			
+			<!-- v-if搭配使用，先循环，再判断,所以索引值是不变的-->
+			<li  v-if="stu.age%2==0" v-for="stu,key in students" >{{key}}--{{stu}}</li>
+		
+			
+		</div>
+		<script type="text/javascript">
+			var app = new Vue({
+				el:'#app',
+				data:{
+					names:['a','b','c','d'],
+					students:[
+						{
+							name:'小明',
+							age:17,
+							
+						},
+						{
+							name:'小亮',
+							age:16
+						}
+					]
+
+				}
+			})
+		</script>
+	</body>
+
+</html>

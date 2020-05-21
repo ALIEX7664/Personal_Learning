@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<style type="text/css">
+			.my{
+				width: 100px;
+				height: 100px;
+				background-color: #0000FF;
+				color: #FFF;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app"> 
+			<!-- <img :src="link" style="width:30%;"> -->
+			
+			<div :class="{my:isTrue}">{{isTrue}}</div>
+		</div>
+
+		<script type="text/javascript">
+			var app = new Vue({
+							el:'#app', //外层div的id属性
+							data:{
+								link:'https://picsum.photos/360/460?random=1',
+								word:'',
+								isTrue:true
+			                }
+							})
+		</script>
+	</body>
+</html>

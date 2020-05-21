@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:>
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="regiter_css.css">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" type="text/javascript"></script>
+
+    <title>清水河畔</title>
+</head>
+<body>
+<div class="header">
+    <div class="hearder_top">
+     <img src="photo/stuhome_logo.gif" class="img_logo">
+        <ul class="ul_head" id="header_li">
+           <li v-cloak v-for="site in sites">{{site.name}}</li>
+        </ul>
+        <ul class="ul_head_2" id="header_li_2">
+            <li v-cloak v-for="site in sites"><a href="login.html">{{site.name}}</a></li>
+        </ul>
+    </div>
+    <div class="header_middle">
+        <div class="head_search">
+        <input type="text"  size="45" class="search" value="请输入搜索内容" onfocus="javascript:this.value=''" >
+        <button class="head_submit" >搜索</button>
+        </div>
+        <div class="logo"></div>
+        <div class="logo_nav">快捷导航</div>
+    </div>
+
+    <div class="header_bottom" id="header_bottom_li">
+        <ul class="nav_list">
+            <li ><a href="#" style="color: orange">校园服务</a></li>
+            <li v-cloak v-for="site in sites"><a href="#"  >{{site.name}}</a></li>
+            <li><a href="#" style="color: purple">河畔商城</a></li>
+        </ul>
+    </div>
+</div>
+<div class="content">
+    <div class="content_head">
+        <span style="margin-left: 10px;font-weight: bold;color: gray;">立即注册</span>
+        <a href="login.html" style="color: #3495f3;font-size: 12px;margin-right: 10px;float: right;">已有账号？现在登录</a>
+    </div>
+    <form class="content_mid" id="formcheck" onsubmit=" check()" method="post" action="login.html">
+        <table>
+            <tr><td class="td1"><sup>*</sup>用户名:</td><td><input  size="40" name="name" type="text" onblur="checkname()" required></td><td class="tip" id="vename">用户名由3到15个字符组成</td></tr>
+            <tr><td class="td1"><sup>*</sup>密码:</td><td><input size="40" name="pswd" type="password"onblur="checkcode()" required></td><td class="tip" id="vepswd">密码最小长度为6个字符</td></tr>
+            <tr><td class="td1"><sup>*</sup>确认密码:</td><td><input size="40" name="agpswd" type="password" onblur="checkagcode()" required></td><td class="tip" id="veagpswd">请再输入一次密码</td></tr>
+            <tr><td class="td1"><sup>*</sup>Email:</td><td><input size="40" name="email" type="text" onblur="checkemail()" required></td><td class="tip" id="veemail">请输入邮箱</td></tr>
+            <tr><td class="td1"><sup>*</sup>学号:</td><td><input size="40" name="num" type="text" onblur="checknum()" required></td><td class="tip" id="venum">请输入学号</td></tr>
+            <tr><td class="td1"><sup>*</sup>信息门户（统一身份认证）密码:</td><td><input size="40" name="ID" type="password" onblur="checkID()" required></td><td class="tip"  id="veID">请输入身份证后六位</td></tr>
+        </table>
+                 <button class="but" type="submit" type="" @click="sign">提交</button>
+    </form>
+    
+</div>
+    <div class="under">
+        <div class="line">
+            <div class="under_nav">
+
+                <a href="#"><img src="photo/site_qq.jpg" style="position: absolute;left: 10px;margin-top: 3px; "></a>
+                <ul>
+                    <li style="border-left: 1px solid gray;"><a href="#">手机版</a></li>
+                    <li><a href="#">小黑屋</a></li>
+                    <li style="border-right: none"><a href="#" style="font-weight: bold">清水河畔－电子科技大学官方论坛</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="end">
+            <p> Powered by <span style="font-weight: bold;">Discuz</span>! X3.4 © 1998-2017 StarStudio</p>
+            GMT+8, 2019-10-23 22:21 , Processed in 0.033145 second(s), 10 queries , Gzip On.
+            <img src="photo/pic.gif">
+        </div>
+    </div>
+<script type="text/javascript">
+    var header_li = new Vue({
+            el:'#header_li',
+            data:{
+                sites:[
+                    {name:'清水河畔'},
+                    {name:'客户端下载'}
+                ]
+            }
+
+    })
+    var header_li_2 = new Vue({
+            el:'#header_li_2',
+            data: {
+                sites: [
+                    {name:'登录'},
+                    {name:'立即注册'}
+                ]
+            }
+    })
+    //菜单列表
+    var header_bottom_li = new Vue({
+            el:'#header_bottom_li',
+            data:{
+                sites:[
+                    {name:'论坛服务'},
+                    {name:'成电校园'},
+                    {name:'科技交流'},
+                    {name:'休闲娱乐'},
+                    {name:'跳蚤市场'}
+                ]
+            }
+    })
+    //注册按钮
+    var form_sign = new Vue({
+            el:'#formcheck',
+            methods:{
+                sign() {
+                    var check = checkID()&&checknum()&&checkemail()&&checkagcode()&&checkname()&&checkcode();
+                    if(!check)
+                        alert("输入有误，请重新输入");
+                    else
+                        alert("注册成功！");
+                    return check;
+                }
+            }
+    })
+    function checkname() {
+        var formcheck = document.getElementById("formcheck");
+        var vename = document.getElementById("vename");
+        var name = formcheck.name.value.length;
+        if(name<3 || name>15)
+        {
+            vename.innerHTML="<span style='color: red'>输入3到15之间的字符</span>";
+            return false;
+        }
+        else{
+            vename.innerHTML="<span style='color:green'>输入正确</span>";
+            return true;
+        }
+    }
+    function checkcode() {
+        var formcheck = document.getElementById("formcheck");
+        var vecode = document.getElementById("vepswd");
+        var veagcode = document.getElementById("veagpswd");
+        var code = formcheck.pswd.value.length;
+        if (code < 6) {
+            vecode.innerHTML = "<span style='color: red'>最小长度为6个字符</span>";
+            return false;
+        }
+        else if(code>=6){
+            vecode.innerHTML = "<span style='color: green'>输入正确</span>";
+            if(formcheck.agpswd.value == formcheck.pswd.value && formcheck.agpswd.value!=""&& formcheck.agpswd.value!="")
+            {
+                veagcode.innerHTML="<span style='color: green'>输入一致</span>";
+                return  true;
+            }
+            else
+            {
+                veagcode.innerHTML = "<span style='color: red'>前后输入不一致</span>";
+                return  false;
+            }
+            return  true;
+        }
+
+    }
+    function checkagcode() {
+        var formcheck = document.getElementById("formcheck");
+        var veagcode  = document.getElementById("veagpswd");
+        if(formcheck.agpswd.value == formcheck.pswd.value && formcheck.pswd.value !="" )
+        {
+            veagcode.innerHTML="<span style='color: green'>输入一致</span>";
+            return true;
+        }
+        else if(formcheck.agpswd.value == 0){
+            veagcode.innerHTML="<span style='color:red;'>不能为空</span>"
+            return  false;
+        }
+        else{
+            veagcode.innerHTML = "<span style='color: red'>前后输入不一致</span>";
+            return false;
+        }
+
+    }
+    function checkemail() {
+        var formcheck = document.getElementById("formcheck");
+        var veemail  = document.getElementById("veemail");
+        var email = /^([a-zA-Z0-9])+\w+@+[a-zA-z0-9]+\.+[a-z]{2,6}$/ ;
+        if(!email.test(formcheck.email.value))
+        {
+            veemail.innerHTML = "<span style='color: red'>邮箱格式出错</span>" ;
+            return false;
+        }
+        else {
+            veemail.innerHTML = "<span style='color: green'>输入正确</span>";
+            return true;
+        }
+    }
+    function   checknum() {
+        var formcheck = document.getElementById("formcheck");
+        var venum = document.getElementById("venum");
+        var num = /^[0-9]{13}$/;
+        if(!num.test(formcheck.num.value))
+        {
+            venum.innerHTML="<span style='color: red'>输入错误，学号为13位</span>"
+            return false;
+        }
+        else
+        {
+            venum.innerHTML="<span style='color: green'>输入正确</span>";
+            return true;
+        }
+    }
+    function checkID() {
+        var formcheck = document.getElementById("formcheck");
+        var veID = document.getElementById("veID");
+        var ID = /^[0-9]([0-9]{4})[Xx0-9]$/;
+        if(!ID.test(formcheck.ID.value))
+        {
+            veID.innerHTML="<span style='color: red'>密码为身份证后六位</span>";
+            return false;
+        }
+        else
+        {
+            veID.innerHTML="<span style='color: green'>输入正确</span>";
+            return  true;
+        }
+    }
+
+</script>
+</body>
+</html>

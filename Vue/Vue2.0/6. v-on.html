@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	
+	<body>
+		<div id="app">
+		<h1>计数器</h1>
+		<button type="button" v-on:click="count++">cilck</button>
+		<p>{{count}}</p>
+		
+		<h1>内容改变</h1>
+		<button type="button" v-on:click="wordInput()">cilck</button>
+		<div>{{word}}</div>	
+		</div>
+		<script type="text/javascript">
+			var app = new Vue({
+				el:"#app",
+				data:{
+					word:'Hi',
+					count:1
+				},
+				methods:{
+					wordInput:function(){
+						this.word = 'Hello'
+						console.log(this.word)
+					}
+				}
+			})
+		</script>
+	</body>
+	
+</html>
+

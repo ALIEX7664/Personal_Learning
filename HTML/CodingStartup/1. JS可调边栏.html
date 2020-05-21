@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+	<script type="text/javascript">
+		window.onload = function(){
+		var startX;
+		var startWidth = localStorage.getItem('scalable-width') || getScalabeDivWidth();//左边的宽度
+		
+		document.querySelector('.scalable').style.width = startWidth + 'px';
+		
+		document.querySelector('.separator').addEventListener('mousedown',startDrag)
+		
+		function startDrag(e){	//鼠标按下出发，此时监听移动和离开事件
+			startX = e.clientX; //获取鼠标开始移动的X坐标
+			// getComputedStyle 读取的样式是最终样式，包括了内联样式、嵌入样式和外部样式。
+			startWidth = getScalabeDivWidth();//去掉px单位，转换为整数
+			console.log(startWidth);
+			
+			document.documentElement.addEventListener('mousemove',onDarg);
+			document.documentElement.addEventListener('mouseup',stopDrag);
+		}
+		
+		function onDarg(e){	//移动时触发
+			let newWidth = startWidth + e.clientX - startX;//clientX - startX = 鼠标移动距离
+			document.querySelector('.scalable').style.width = newWidth+'px';
+		}
+		
+			
+		function stopDrag(e){ //停止移动时触发，移除移动和开始移动的事件监听
+			localStorage.setItem('scalable-width',getScalabeDivWidth());
+			document.documentElement.removeEventListener('mousemove',onDarg);
+			document.documentElement.removeEventListener('moseup',stopDrag);
+		}
+		function getScalabeDivWidth(){ //获取宽度函数封装，输出整数值
+			return  parseInt(window.getComputedStyle(document.querySelector('.scalable')).width,10); //去掉px
+		}
+		}
+		
+	</script>
+    <style type="text/css">
+        body{
+			/*弹性布局 flex让div在同一行显示而无需使用float */
+            display: flex;
+			margin: 0;
+			min-height: 100vh ;
+        }
+		.scalable{
+			background-color: gray;
+			position: relative;
+			min-width: 100px;
+			}
+		.main{
+			/* background-color: yellow; */
+			flex: 1;
+		}	
+		.content{
+			padding: 20px;
+		}
+		.scalable .separator{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			top:0 ;
+			right: 0;
+			width: 14px;
+			height: 100%;
+			background-color:white ;
+			/* rgba (r,g,b,alpha) */
+			box-shadow: 0px 0px 2px rgba(0,0,0, 0.35);
+			/* col-resize 垂直宽度可调光标 */
+			cursor: col-resize; 
+		}
+		.scalable .separator i{
+			display: inline-block;
+			height: 14px;
+			width: 1px;
+			background-color: #e9e9e9;
+			margin: 0 1px;
+		}
+		.scalable .content{
+			padding-right: 34px;
+		}
+			
+		.scalable .content img{
+			display: block;
+			max-width: 100%;
+			margin: auto;
+			}
+			body{
+				-webkit-user-select: none;
+				user-select: none;
+			}
+    </style>
+</head>
+<body>
+     <div class="scalable">
+         <div class="content">
+            <img src="https://codingstartup.com/images/logo.svg">
+         </div>
+		 <div class="separator">
+			 <i></i><i></i>
+		 </div>
+     </div>
+     <div class="main">
+         <div class="content">
+            Hello.
+         </div>
+     </div>
+</body>
+
+
+</html>

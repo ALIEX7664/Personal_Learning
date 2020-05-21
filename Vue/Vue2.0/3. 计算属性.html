@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<!-- 无论是否修改都会进行计算,性能低 -->
+			<span>{{firstName+lastName}}</span>
+			<br>
+			<!-- 若不修改只会进行一次计算,性能较高 -->
+			<span>{{fullName}}</span>
+			
+			<!-- 单词逆序 -->
+			<p>{{word.split('').reverse('').join('')}}</p>
+			<!-- 高性能 -->
+			<p>{{fullWord}}</p>
+			
+			
+			<!-- 显示偶数年龄学生 -->
+			<h1>students</h1>
+			<ul>
+				<li v-for="item,index in oddStudents" :key="index">{{item.name}}----{{item.age}}</li>
+				
+			</ul>
+			
+			<h1>{{now}}</h1>
+		</div>
+		
+
+		<script type="text/javascript">
+			var app = new Vue({
+				el:'#app',
+				data:{
+					firstName:'Harry',
+					lastName:'Potter',
+					word:'world',
+					students:[
+						{
+							name:'小明',
+							age:17,
+							
+						},
+						{
+							name:'小亮',
+							age:16
+						},
+						
+					],
+					
+				},
+				
+				/* 计算属性,可以用于计算变量的赋值,会将计算结果进行缓存 
+				*  不能使用箭头函数来计算变量的值
+				* 使用	变量:function(){}
+				*/ 
+				computed:{
+					fullName:function(){
+						return (this.firstName+this.lastName)
+					},
+					fullWord:function(){
+						return this.word.split('').reverse('').join('')
+					},
+					oddStudents:function(){
+						// 需包含item参数
+						let result = this.students.filter((item)=>{
+							return item.age %2==1 
+						})
+						return result
+					},
+					
+					/* 时间计算不是响应式依赖，所以不会更新 ，只有重新渲染时才会触发更新*/ 
+					now:function(){
+						return Date.now();
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

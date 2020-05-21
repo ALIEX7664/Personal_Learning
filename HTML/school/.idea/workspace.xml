@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="609ea90b-46f9-4670-8fd2-76ad1a535447" name="默认更改列表" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="218" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1SZ2v5ZaltNQupHlaNvFX5BDDUA" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Webstormpj\school\photo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="register.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/school/register.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.register.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="609ea90b-46f9-4670-8fd2-76ad1a535447" name="默认更改列表" comment="" />
+      <created>1571757024528</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571757024528</updated>
+      <workItem from="1571757025691" duration="6513000" />
+      <workItem from="1571798286218" duration="17595000" />
+      <workItem from="1571840039913" duration="4411000" />
+      <workItem from="1571908914010" duration="362000" />
+      <workItem from="1572182764459" duration="86000" />
+      <workItem from="1572183037483" duration="1109000" />
+      <workItem from="1572190415452" duration="779000" />
+      <workItem from="1572191226561" duration="46000" />
+      <workItem from="1572253542396" duration="13128000" />
+      <workItem from="1572337632981" duration="13862000" />
+      <workItem from="1572360030859" duration="302000" />
+      <workItem from="1572409974856" duration="661000" />
+      <workItem from="1572413598179" duration="1498000" />
+      <workItem from="1572445088203" duration="151000" />
+      <workItem from="1572510376110" duration="2908000" />
+      <workItem from="1572969529148" duration="21000" />
+      <workItem from="1573046219018" duration="6044000" />
+      <workItem from="1573085714343" duration="35000" />
+      <workItem from="1573086529039" duration="4233000" />
+      <workItem from="1573102537544" duration="1595000" />
+      <workItem from="1573108093311" duration="1229000" />
+      <workItem from="1573117016286" duration="1234000" />
+      <workItem from="1573129558681" duration="238000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/school$register_html.dat" NAME="register.html Coverage Results" MODIFIED="1573051599134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
