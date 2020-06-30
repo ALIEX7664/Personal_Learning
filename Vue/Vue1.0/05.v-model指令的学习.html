@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <p>{{msg}}</p>
+<!--v-bind  只可实现单向数据绑定，只能将data:msg 的值赋给input   -->
+<!--v-model 可实现双向数据绑定，能将input里的修改赋给msg实现交互    -->
+<!-- 可用标签：input(text,email...)  textarea    select  checkbox  -->
+    <input type="text" style="width: 100%" v-model="msg">
+</div>
+
+<script>
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            msg:'双向数据绑定可修改'
+        },
+        methods:{}
+
+    })
+
+</script>
+</body>
+</html>

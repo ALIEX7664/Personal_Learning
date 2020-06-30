@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>跑马灯</title>
+</head>
+<body>
+    <div id="app">
+        <input type="button" value="跑马灯" @click="runshow">
+        <input type="button" value="暂停" @click="stop">
+        <h1>{{msg}}</h1>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el:'#app',
+            data:{
+                msg:'ABCDEFG',
+                count:null
+            },
+            methods:{
+                runshow(){
+
+                    if(this.count == null) {
+                        this.count = setInterval(() => {
+                            var start = this.msg.substring(0, 1);
+                            var end = this.msg.substring(1);
+                            this.msg = end + start;
+                        }, 200);
+                    }
+                },
+                stop(){
+                    clearInterval(this.count);
+                    this.count = null;
+                }
+
+            }
+        })
+    </script>
+</body>
+</html>

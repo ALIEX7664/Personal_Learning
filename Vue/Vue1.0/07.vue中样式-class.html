@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        .red{
+            color: red;
+        }
+        .green{
+            background-color: green;
+        }
+        .italic{
+            font-style: italic;
+        }
+        .active{
+            letter-spacing: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!-- :class 表示属性需要用[]数组形式进行表示        -->
+        <h1 :class="['red','italic']">字体接地极</h1>
+
+        <!-- 条件判断   f？a:b 来添加class属性        -->
+        <h1 :class="['red','italic',flag?'active':'']">字体接地极</h1>
+
+        <!-- 变量代替三元表达式 -->
+        <h1 :class="['red','italic',{active:flag}]">字体接地极</h1>
+        <!--另一种写法   属性中的样式可带''也可不带  -->
+        <h1 :class="{red:true , italic:true , active:false,green:true}">字体接地极</h1>
+        <!-- 另一种写法 变量存储class中的样式 -->
+        <h1 :class="classObj">字体接地极</h1>
+    </div>
+    </div>
+<script>
+    var app = new Vue({
+        el:'#app',
+        data:{
+            flag:true,
+            classObj:{red:true , italic:true , active:false,green:true}
+        },
+        methods:{
+
+        }
+    })
+</script>
+</body>
+</html>

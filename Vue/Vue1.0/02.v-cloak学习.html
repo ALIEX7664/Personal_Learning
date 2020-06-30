@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Title</title>
+    <style>
+        [v-cloak]{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <!--v-cloak解决   插值表达式闪烁问题-->
+    <p v-cloak>++++{{msg}}----  {{msg2}}</p>
+    <!--v-text  传入data中的msg-->
+    <h4 v-text="msg">+++++</h4>
+    <!--v-text  不会产生闪烁问题，但是会覆盖标签里的内容 但插值表达式只会替换自己的占位符，不会把整个元素内容清空-->
+    <h4 v-html="msg2"></h4>
+    <!--v-html 用于渲染带有html元素的字符串 v-cloak和v-text只能渲染字符串-->
+    <input type="button" value="1" v-bind:title="titles + '123'">
+    <input type="button" value="2" :title="titles">
+    <!--v-bind  用于绑定属性的指令
+        v-bind  可以简写为 :要绑定的属性
+        v-bind  后面可以写JS合法的表达式-->
+
+    <input type="button" value="click" v-on:click="show">
+    <!--v-on   事件绑定机制，绑定事件
+                e.g v-on:mouseove=“JS表达式”
+                'v-on:' 可简写为    '@'-->
+</div>
+
+
+
+<script>
+    var app = new Vue({
+        el:'#app',
+        data:{
+            msg:'Hello！',
+            msg2:'<h1>急急急</h1>',
+            titles:'amaze'
+        },
+        methods:{   //定义当前Vue实例所有可用的方法
+            show:function () {
+                alert("v-on绑定");
+            }
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>事件修饰符</title>
+    <style>
+        .type{
+            height: 100px;
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+<!--    <div id="app">-->
+<!--            &lt;!&ndash;.capture 实现事件捕获机制，先触发外部div 再触发内部input&ndash;&gt;-->
+<!--        <div  class="type" @click.capture="divClick">-->
+<!--            &lt;!&ndash;.stop 阻止冒泡 &ndash;&gt;-->
+<!--            <input type="button" @click.stop="btnClick" value="点击">-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+<!--    <div id="app">-->
+<!--        &lt;!&ndash;.self只有自身被点击时   才会实现事件触发处理函数&ndash;&gt;-->
+<!--        <div  class="type" @click.self="divClick">-->
+<!--            <input type="button" @click="btnClick" value="点击">-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+<!--<div id="app">-->
+<!--    &lt;!&ndash;.prevent 会组止默认行为    input<onclick>默认行为是冒泡，将无法冒泡-->
+<!--        .once 只执行一次触发事件    click触发事件只能被执行一次-->
+<!--        .once和.prevent是平行关系而不是父子关系&ndash;&gt;-->
+<!--    <div  class="type" @click.self="divClick">-->
+<!--        <input type="button" @click.prevent.once="btnClick" value="点击">-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--.stop可以阻止所有外层的冒泡行为，真正意义上的阻止冒泡-->
+<!--.self只会阻止自己身上冒泡行为的触发，只触发自身-->
+
+    <script>
+        var app = new Vue({
+            el:'#app',
+            data:{},
+            methods:{
+                    divClick(){
+                        console.log('触发div事件')
+                    },
+                    btnClick(){
+                        console.log('触发btn事件')
+                    }
+            }
+        })
+    </script>
+</body>
+</html>
