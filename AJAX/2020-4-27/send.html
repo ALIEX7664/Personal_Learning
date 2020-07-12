@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			        function sendMsg(){
+					var xmlhttp = new XMLHttpRequest()
+					var $p = document.getElementById('tip')
+					
+					var get = xmlhttp.open("GET",'file.txt',true)
+					var send  = xmlhttp.send()
+					
+					console.log(get)
+					console.log(send)
+					
+					$p.innerText = 'sending messeges'
+					
+					}
+		</script>
+	</head>
+	<body>
+		<input type="button" onclick="sendMsg()" value="click" ></input>
+		<p id="tip"></p>
+		
+	</body>
+
+</html>
