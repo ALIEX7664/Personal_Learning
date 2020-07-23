@@ -1,137 +1,135 @@
-//#include <stdio.h>
-//#include <stdlib.h>
-//
-//
-//
-//#define Size 5
-//
-//
-//
-//typedef struct Table{
-//	int *head;
-//	int length;
-//	int size;
-//}table;
-//
-//
-//
-//table initTable()  //初始化
-//{
-//	table t;
-//	t.head = (int*)malloc(Size * sizeof(int));
-//	if (!t.head)
-//	{
-//		perror("");
-//		exit(0);
-//	}
-//
-//	t.length = 0;
-//	t.size = Size;
-//	return t;
-//}
-//
-//void displayTable(table t)  //显示所有元素
-//{
-//	for (int i = 0; i < t.length; i++)
-//	{
-//		printf("%d", t.head[i]);
-//	}
-//
-//	printf("\n");
-//}
-//
-//table addTable(table t, int elem, int add) //添加元素在指定地方
-//{
-//	if ( (add > t.length + 1) || (add < 1))
-//	{
-//		printf("error \n");
-//		return t;
-//	}
-//	 
-//	if (t.size == t.length)
-//	{
-//		t.head = (int*)realloc(t.head, (t.size + 1) * sizeof(int)); //增加新空间
-//		if (!t.head)
-//		{
-//			printf("realloc error");
-//			return t;
-//		}
-//
-//		t.size++;
-//	}
-//
-//	for (int i = t.length - 1; i >= add - 1; i--)
-//	{
-//		t.head[i + 1] = t.head[i];
-//	}
-//
-//	t.head[add - 1] = elem;
-//	t.length++;
-//	return t;
-//
-//}
-//
-//table delTable(table t, int del)	//删除指定位置元素
-//{
-//	if (del > t.length || del < 1)
-//	{
-//		printf("error");
-//		return t;
-//	}
-//	else
-//	{
-//		for (int i = del - 1; i < t.length - 1; i++)
-//		{
-//			t.head[i] = t.head[i + 1];
-//		}
-//
-//		t.length--;
-//	}
-//
-//	return t;
-//}
-//
-//int selectTable(table t, int elem)	//查找元素位置
-//{
-//	for (int i = 0; i < t.length;i++)
-//	{
-//		if (t.head[i] == elem)
-//		{
-//			return i + 1;
-//		}
-//
-//	}
-//	return -1; //表示出错
-//}
-// 
-//table amendTable(table t, int elem, int newElem)	//修改元素为新元素
-//{
-//	int add = selectTable(t, elem);
-//	t.head[add - 1] = newElem;
-//	return t;
-//}
-//
-//int main()
-//{
-//	table t = initTable();
-//	for (int i = 0;  i < Size; i++)
-//	{
-//		t.head[i] = i + 1;
-//		t.length++;
-//	}
-//	displayTable(t);
-//	t = addTable(t, 2, 1);
-//	displayTable(t);
-//
-//	t = delTable(t, 1);
-//	displayTable(t);
-//
-//	int add = selectTable(t, 2);
-//	printf("%d\n", add);
-//
-//	t = amendTable(t, 2, 7);
-//	displayTable(t);
-//
-//	return 0;
-//}
-//
+#include <stdio.h>
+#include <stdlib.h>
+#define MAXSIZE 50 //最大数据元素数量
+
+//线性表结构体
+typedef struct
+{
+    int data[MAXSIZE];
+    int length;
+} SqList;
+
+//创建线性表
+void CreateList(SqList *&L, int a[], int n)
+{
+    int i = 0;
+    L = (SqList *)malloc(sizeof(SqList)); //分配线性表存储空间
+    while (i < n)
+    {
+        L->data[i] = a[i]; //讲数据按i扫描a，存入线性表
+        i++;
+    }
+    L->length = n; //记录长度
+}
+
+//初始化线性表
+void InitList(SqList *&L)
+{
+    L = (SqList *)malloc(sizeof(SqList));
+    L->length = 0; //初始化长度为0
+}
+
+//销毁线性表
+void DestroyList(SqList *L)
+{
+    free(L);
+}
+
+//判断线性表是否为空表
+bool ListEmpty(SqList *L)
+{
+    return (L->length == 0);
+}
+
+//求线性表长度
+int ListLength(SqList *L)
+{
+    return L->length;
+}
+
+//输出线性表
+void DispList(SqList *L)
+{
+    for (int i = 0; i < L->length; i++)
+    {
+        printf("%d", L->data[i]);
+    }
+    printf("\n");
+}
+
+//求线性表中某个数据元素值
+bool GetElem(SqList *L, int i, int &e)
+{
+    //出错判断
+    if (i < 1 || i > L->length)
+    {
+        return false;
+    }
+    //获取元素
+    e = L->data[i - 1];
+    return true;
+}
+
+//按元素值查找
+int LocateElem(SqList *L, int &e)
+{
+    int i = 0;
+    while (i < L->length && L->data[i] != e)
+    {
+        i++;
+    }
+    if (i >= L->length)
+    {
+        return 0;
+    }
+    else
+    {
+        return i + 1; //返回真是坐标，下标+1
+    }
+}
+
+//插入数据元素
+bool ListInsert(SqList *&L, int i, int e)
+{
+    int j;
+    if (i < 1 || i > L->length + 1)
+    {
+        return false;
+    }
+    i--;
+    for (j = L->length; j > i; j--)
+    {
+        //将插入位置及后方元素后移一位
+        L->data[j] = L->data[j - 1];
+    }
+
+    //插入元素并增加长度
+    L->data[i] = e;
+    L->length++;
+    return true;
+}
+
+//删除数据元素
+bool ListDelete(SqList *&L, int i, int &e)
+{
+    int j;
+    if (i < 1 || i > L->length + 1)
+    {
+        return false;
+    }
+    i--;
+    //保存被删除的元素
+    e = L->data[i];
+
+    for (j = i; j < L->length - 1; j++)
+    {
+        L->data[j] = L->data[j + 1];
+    }
+    L->length--;
+    return true;
+}
+
+int main(void)
+{
+    return 0;
+}
