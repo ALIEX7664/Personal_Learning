@@ -65,7 +65,7 @@ bool deQueue(SqQueue *&q,ElemType &e)
     }
     else
     {
-        e = q->data[(q->front)++];
+        e = q->data[++(q->front)];
         return true;
     }
     

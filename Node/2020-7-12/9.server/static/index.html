@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Hello World</h1>
+    <script>
+        fetch('api/list').then((res) => {
+            console.log('fetch')
+            //获取数据
+            return res.json()
+        }).then((res) => {
+            //输出相应数据
+            console.log(res)
+
+            //将对象内容按顺序插入网页中
+            res.list.forEach((item, i) => {
+                let div = document.createElement('div')
+                div.innerHTML = item.usr
+                document.body.appendChild(div)
+            })
+        })
+    </script>
+</body>
+
+</html>
