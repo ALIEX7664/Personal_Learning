@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <script src="jquery-3.5.1.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- HTML结构 -->
+<ul class="lang">
+    <li class="js dy">JavaScript</li>
+    <li class="dy">Python</li>
+    <li id="swift">Swift</li>
+    <li class="dy">Scheme</li>
+    <li name="haskell">Haskell</li>
+</ul>
+<script>
+    var ul = $('ul.lang'); // 获得<ul>
+    var dy = ul.find('.dy'); // 获得JavaScript, Python, Scheme
+    var swf = ul.find('#swift'); // 获得Swift
+    var hsk = ul.find('[name=haskell]'); // 获得Haskell
+    console.log(ul)
+    console.log(dy)
+    console.log(swf)
+    </script>
+    </body>
+</html>

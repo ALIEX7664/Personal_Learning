@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.5.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id ="testForm" onsubmit="return true">
+        <input type="text">
+        <button type="submit">submit</button>
+    </form>
+    <script>
+     var a = $('document').on('ready',()=>{
+         $('#testForm')
+     }).on('submit',()=>{
+         alert('click')
+     })
+     console.log(a)
+    </script>
+</body>
+</html>

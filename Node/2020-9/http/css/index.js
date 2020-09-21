@@ -1,0 +1,1 @@
+$(document).ready(()=>$('#btn').click(()=>$('h1').hide(3000)))

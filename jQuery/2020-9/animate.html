@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="./jquery-3.5.1.min.js"> </script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test" class="te" style="background-color: black;width: 100px;height: 200px;">ss</div>
+    <button type="button">click</button>
+    <script>
+       
+        $('button').click(()=>{
+        var t = $('.te')
+         t.animate({ width:'300px'},3000)
+         t.delay(2000)
+         t.animate({height:'600px'},3000,()=>{
+           t.hide(1000)
+         })
+         
+       })
+
+     </script>   
+</body>
+</html>
