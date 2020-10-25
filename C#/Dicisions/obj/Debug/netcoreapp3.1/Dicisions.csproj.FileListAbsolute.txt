@@ -1,0 +1,13 @@
+E:\LearningDemo\C#\Dicisions\bin\Debug\netcoreapp3.1\Dicisions.exe
+E:\LearningDemo\C#\Dicisions\bin\Debug\netcoreapp3.1\Dicisions.deps.json
+E:\LearningDemo\C#\Dicisions\bin\Debug\netcoreapp3.1\Dicisions.runtimeconfig.json
+E:\LearningDemo\C#\Dicisions\bin\Debug\netcoreapp3.1\Dicisions.runtimeconfig.dev.json
+E:\LearningDemo\C#\Dicisions\bin\Debug\netcoreapp3.1\Dicisions.dll
+E:\LearningDemo\C#\Dicisions\bin\Debug\netcoreapp3.1\Dicisions.pdb
+E:\LearningDemo\C#\Dicisions\obj\Debug\netcoreapp3.1\Dicisions.csprojAssemblyReference.cache
+E:\LearningDemo\C#\Dicisions\obj\Debug\netcoreapp3.1\Dicisions.csproj.CoreCompileInputs.cache
+E:\LearningDemo\C#\Dicisions\obj\Debug\netcoreapp3.1\Dicisions.AssemblyInfoInputs.cache
+E:\LearningDemo\C#\Dicisions\obj\Debug\netcoreapp3.1\Dicisions.AssemblyInfo.cs
+E:\LearningDemo\C#\Dicisions\obj\Debug\netcoreapp3.1\Dicisions.dll
+E:\LearningDemo\C#\Dicisions\obj\Debug\netcoreapp3.1\Dicisions.pdb
+E:\LearningDemo\C#\Dicisions\obj\Debug\netcoreapp3.1\Dicisions.genruntimeconfig.cache

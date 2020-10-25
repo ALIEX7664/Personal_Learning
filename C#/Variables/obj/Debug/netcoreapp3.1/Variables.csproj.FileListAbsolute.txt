@@ -1,0 +1,13 @@
+E:\LearningDemo\C#\Variables\bin\Debug\netcoreapp3.1\Variables.exe
+E:\LearningDemo\C#\Variables\bin\Debug\netcoreapp3.1\Variables.deps.json
+E:\LearningDemo\C#\Variables\bin\Debug\netcoreapp3.1\Variables.runtimeconfig.json
+E:\LearningDemo\C#\Variables\bin\Debug\netcoreapp3.1\Variables.runtimeconfig.dev.json
+E:\LearningDemo\C#\Variables\bin\Debug\netcoreapp3.1\Variables.dll
+E:\LearningDemo\C#\Variables\bin\Debug\netcoreapp3.1\Variables.pdb
+E:\LearningDemo\C#\Variables\obj\Debug\netcoreapp3.1\Variables.csprojAssemblyReference.cache
+E:\LearningDemo\C#\Variables\obj\Debug\netcoreapp3.1\Variables.csproj.CoreCompileInputs.cache
+E:\LearningDemo\C#\Variables\obj\Debug\netcoreapp3.1\Variables.AssemblyInfoInputs.cache
+E:\LearningDemo\C#\Variables\obj\Debug\netcoreapp3.1\Variables.AssemblyInfo.cs
+E:\LearningDemo\C#\Variables\obj\Debug\netcoreapp3.1\Variables.dll
+E:\LearningDemo\C#\Variables\obj\Debug\netcoreapp3.1\Variables.pdb
+E:\LearningDemo\C#\Variables\obj\Debug\netcoreapp3.1\Variables.genruntimeconfig.cache

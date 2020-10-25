@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/compile.js"],"names":["add","num"],"mappings":"AAAA;;AAEA,IAAIA,GAAG,GAAG,SAASA,GAAT,CAAaC,GAAb,EAAkB;AAC1BA,EAAAA,GAAG;AACJ,CAFD","sourcesContent":["\"use strict\";\n\nvar add = function add(num) {\n  num++;\n};\n"],"file":"compile.js"}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/index.js"],"names":["add","num"],"mappings":";;AAAA,IAAIA,GAAG,GAAG,SAANA,GAAM,CAAAC,GAAG,EAAG;AACZA,EAAAA,GAAG;AACN,CAFD","sourcesContent":["let add = num =>{\r\n    num++;\r\n}"],"file":"index.js"}
