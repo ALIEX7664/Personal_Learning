@@ -1,0 +1,20 @@
+<!--pages/wxs/wxs.wxml-->
+<text>pages/wxs/wxs.wxml</text>
+<wxs module="obj">
+// 不支持箭头函数等ES6语法
+  setPrice = function(price){
+      return  price+"￥";
+  }
+
+  module.exports={
+    setPrice:setPrice
+  }
+</wxs>
+<!-- 传入常量 -->
+<view>
+  价格 {{obj.setPrice(10000)}}
+</view>
+<!-- 传入变量price -->
+<view>
+  价格 {{obj.setPrice(price)}}
+</view>

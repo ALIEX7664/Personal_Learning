@@ -1,0 +1,17 @@
+<!--pages/wxml.wxml-->
+<text>Wxml</text>
+<view>
+  {{10+100}}
+</view>
+<view>{{user.friends[0].username}}</view>
+<view>{{ {username:'Aliex'} }}</view>
+<view wx:for="{{ {username:'Aliex',age:13} }}">
+  {{index}}-{{item}}
+</view>
+<view data-index="id-{{id}}"></view>
+
+<view>
+  <text>{{msg}}</text>
+  <image src="/images/avatar-1.png"></image>
+  <image src="{{isActive?'/images/avatar.png':'/images/avatar-1.png'}}"></image>
+</view>

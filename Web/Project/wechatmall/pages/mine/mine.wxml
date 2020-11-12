@@ -1,0 +1,28 @@
+<view class="navbar" style="height:{{height}}rpx">
+  <text class="title">个人中心</text>
+</view>
+
+<scroll-view class="container" style="top:{{height}}rpx;" scroll-y="{{true}}" bindscrolltolower="reachBottom">
+  <view class="user-info">
+    <image class="avatar" src="{{avatar}}"></image>
+    <text class="nickname">{{ nickName || '请登录'}}</text>
+  </view>
+
+  <van-cell-group title="订单">
+    <van-cell icon="balance-list-o" title="我的订单" value="查看订单" />
+  </van-cell-group>
+  <van-cell-group title="服务">
+    <van-cell icon="coupon-o" title="优惠券" value="查看优惠券" />
+    <van-cell icon="gift-o" title="礼品卡" value="查看礼品" />
+    <van-cell icon="star-o" title="收藏" value="查看收藏" />
+  </van-cell-group>
+</scroll-view>
+
+<view>
+  <van-tabbar active="{{ active }}" bind:change="onChange">
+    <van-tabbar-item icon="home-o">首页</van-tabbar-item>
+    <van-tabbar-item icon="fire">分类</van-tabbar-item>
+    <van-tabbar-item icon="shopping-cart-o">购物车</van-tabbar-item>
+    <van-tabbar-item icon="contact">个人</van-tabbar-item>
+  </van-tabbar>
+</view>

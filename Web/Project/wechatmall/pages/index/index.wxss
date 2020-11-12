@@ -1,0 +1,111 @@
+/**index.wxss**/
+.navbar {
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+/* 居中布局设定 */
+.navbar .title {
+  position: absolute;
+  width: 750rpx;
+  text-align: center;
+  left: 0;
+  bottom: 20rpx;
+  font-size: 30rpx;
+}
+
+/* 背景宽度铺满 */
+.bg {
+  width: 750rpx;
+}
+
+/* 轮播图设定 */
+.swiper {
+  width: 750rpx;
+  height: 280rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper {
+  width: 700rpx;
+  height: 280rpx;
+  border-radius: 30rpx;
+}
+
+.swiper image {
+  width: 700rpx;
+  height: 280rpx;
+  border-radius: 30rpx;
+}
+
+/* 宫格 */
+.grid-image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.icon-list {
+  margin-top: 10rpx;
+}
+
+.grid-item {
+  padding: 10rpx 0 0 0;
+}
+
+/* 滚动区域 */
+
+.container {
+  position: fixed;
+  left: 0;
+  bottom: 100rpx;
+  width: 750rpx;
+  z-index: 100;
+}
+
+/* 小标题 */
+.recommend {
+  width: 750rpx;
+  height: 100rpx;
+  position: relative;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  background-color: #fff;
+  padding: 20rpxs;
+}
+
+.recommend image {
+  height: 80rpx;
+}
+
+.product image {
+  width: 360rpx;
+  height: 360rpx;
+}
+
+.product .title {
+  display: flex;
+  height: 80rpx;
+  align-items: center;
+  font-size: 30rpx;
+  /* 文本不换行 */
+  white-space: nowrap;
+}
+
+.product .title image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.product .title text {
+  width: 270rpx;
+  /* 溢出后方省略号 */
+  text-overflow: ellipsis;
+  /* 溢出隐藏 */
+  overflow: hidden;
+  margin-left: 15rpx;
+}

@@ -1,0 +1,14 @@
+<!--pages/list/list.wxml-->
+<text>pages/list/list.wxml</text>
+
+<view wx:for="{{students}}"  wx:key="index">
+  {{item.username}}
+</view>
+
+<view wx:for="{{students}}" wx:for-item="student" wx:key="index">
+  {{student.username}}
+</view>
+
+<view wx:for="{{students}}" wx:for-item="student" wx:key="number" wx:for-index="number"> 
+ {{number}} {{student.username}}
+</view>

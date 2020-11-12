@@ -1,0 +1,22 @@
+<!--pages/tem/tem.wxml-->
+<text>pages/tem/tem.wxml</text>
+
+<template name="userInfo">
+  <image src="{{url}}"></image>
+  <view>{{name}}</view>
+  <view></view>
+</template>
+
+<template is="userInfo" data="{{...user}}"></template>
+
+<template name="odd">
+  odd
+</template>
+
+<template name="even">
+  even
+</template>
+
+<view wx:for="{{[1,2,3,4,5]}}" wx:key="index">
+  <template is="{{item%2==1?'odd':'even'}}"></template>
+</view> 

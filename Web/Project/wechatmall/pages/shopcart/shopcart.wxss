@@ -1,0 +1,25 @@
+
+.navbar {
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+/* 居中布局设定 */
+.navbar .title {
+  position: absolute;
+  width: 750rpx;
+  text-align: center;
+  left: 0;
+  bottom: 20rpx;
+  font-size: 30rpx;
+}
+
+/* 滚动区域 */
+
+.container {
+  position: fixed;
+  left: 0;
+  bottom: 100rpx;
+  width: 750rpx;
+  z-index: 100;
+}

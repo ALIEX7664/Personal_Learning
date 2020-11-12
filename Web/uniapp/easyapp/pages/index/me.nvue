@@ -1,0 +1,23 @@
+<template>
+	<view>
+		<text>{{msg}}</text>
+		<header-com title="header1"></header-com>
+	</view>
+</template>
+
+<script>
+	export default {
+		data: function() {
+			return {
+				msg: getApp().globalData.msg
+			}
+		},
+		mounted() {
+	
+		}
+	}
+</script>
+
+<style>
+
+</style>

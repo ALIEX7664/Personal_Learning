@@ -1,0 +1,22 @@
+<!--pages/ifelse/ifelse.wxml-->
+<text>pages/ifelse/ifelse.wxml</text>
+<!-- 为真显示 -->
+<view wx:if="{{isVip}}">
+  You are Vip
+</view>
+<!-- 为真隐藏 -->
+<view hidden="{{isVip}}">
+  You are normal user
+</view>
+
+<view wx:if="{{level == 1}}">
+  level 1
+</view>
+<view wx:elif="{{level == 2}}">
+  level 2
+</view>
+
+<view wx:else>
+  level 3
+</view>
+

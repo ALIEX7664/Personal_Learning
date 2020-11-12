@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/request/weather",
+    "pages/event/event",
+    "pages/swiper/swiper",
+    "pages/wxs/wxs",
+    "pages/about/about",
+    "pages/tem/tem",
+    "pages/ifelse/ifelse",
+    "pages/list/list",
+    "pages/wxml",
+    "pages/index/index",
+    "pages/logs/logs"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "Aliex",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#ff000",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "/images/about1.png",
+        "iconPath": "/images/about.png",
+        "pagePath": "pages/index/index",
+        "text": "index"
+      },
+      {
+        "selectedIconPath": "/images/avatar-1.png",
+        "iconPath": "/images/avatar.png",
+        "pagePath": "pages/about/about",
+        "text": "about"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

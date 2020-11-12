@@ -1,0 +1,73 @@
+/* pages/goods/goods.wxss */
+
+.navbar {
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.navbar .title {
+  position: absolute;
+  width: 750rpx;
+  text-align: center;
+  left: 0;
+  bottom: 20rpx;
+  font-size: 30rpx;
+}
+.navbar van-icon{
+  position: absolute;
+  left: 30rpx;
+  bottom: 20rpx;
+  z-index: 100;
+}
+
+.container {
+  position: fixed;
+  left: 0;
+  bottom: 100rpx;
+  width: 750rpx;
+  z-index: 100;
+}
+
+/* 详情页轮播图 */
+.swiper swiper{
+  width: 750rpx;
+  height: 600rpx;
+}
+.swiper swiper .swiper-item image{
+  width: 750rpx;
+  height: 600rpx;
+}
+
+.policy{
+  background-color: #f4f4f4;
+  font-size:medium;
+  height: 60rpx;
+  display: flex;
+  padding: 0 30rpx;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing:border-box;
+  
+}
+
+.pannel-header{
+  width: 750rpx;
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  padding: 0rpx 20rpx;
+}
+
+.pannel-image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  margin: 0rpx 20rpx;
+}
+
+.pannel-content{
+  padding: 20rpx 50rpx;
+  border-bottom: 1px solid #ccc;
+}
+
+

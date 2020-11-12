@@ -1,0 +1,49 @@
+
+.navbar {
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+/* 居中布局设定 */
+.navbar .title {
+  position: absolute;
+  width: 750rpx;
+  text-align: center;
+  left: 0;
+  bottom: 20rpx;
+  font-size: 30rpx;
+}
+
+/* 滚动区域 */
+
+.container {
+  position: fixed;
+  left: 0;
+  bottom: 100rpx;
+  width: 750rpx;
+  z-index: 100;
+}
+
+/* 个人信息 */
+.user-info{
+  width: 750rpx;
+  height: 250rpx;
+  background-color:#808080;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0rpx 20rpx;
+}
+.avatar{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+  margin: 0rpx 40rpx;
+}
+
+.nickname{
+  font-size: 38rpx;
+  height: 42rpx;
+  line-height: 42rpx;
+  color:white;
+}

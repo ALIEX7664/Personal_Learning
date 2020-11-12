@@ -1,0 +1,9 @@
+<!--pages/request/weather.wxml-->
+<text>pages/request/weather.wxml</text>
+
+<form bindsubmit="searchCity">
+  <input name="city" type="text" placeholder="请输入想要查询的城市温度"></input>
+  <button form-type="submit" >submit</button>
+</form>
+
+<view>当前温度：{{temp}}</view>

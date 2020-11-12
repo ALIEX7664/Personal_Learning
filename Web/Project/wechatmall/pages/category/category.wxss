@@ -1,0 +1,62 @@
+/* pages/category/category.wxss */
+.navbar {
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+/* 居中布局设定 */
+.navbar .title {
+  position: absolute;
+  width: 750rpx;
+  text-align: center;
+  left: 0;
+  bottom: 20rpx;
+  font-size: 30rpx;
+}
+
+.navbar van-icon{
+  position: absolute;
+  left: 30rpx;
+  bottom: 20rpx;
+  z-index: 100;
+}
+
+/* 滚动区域 */
+
+.container {
+  position: fixed;
+  left: 0;
+  bottom: 100rpx;
+  width: 750rpx;
+  z-index: 100;
+}
+
+.cate-content{
+  width: 570rpx;
+}
+
+.product image {
+  width: 275rpx;
+  height: 275rpx;
+}
+
+.product .title {
+  display: flex;
+  height: 80rpx;
+  align-items: center;
+  font-size: 30rpx;
+  /* 文本不换行 */
+  white-space: nowrap;
+}
+
+
+.product .title text {
+  width: 270rpx;
+  /* 溢出后方省略号 */
+  text-overflow: ellipsis;
+  /* 溢出隐藏 */
+  overflow: hidden;
+  margin-left: 15rpx;
+}
+
+
