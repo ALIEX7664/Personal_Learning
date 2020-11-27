@@ -10,7 +10,6 @@
     echo "<pre>";
     var_dump($GLOBALS);
 
-
     // $_SERVER —— 包含Web服务器创建的所有信息
     var_dump($_SERVER);
 
