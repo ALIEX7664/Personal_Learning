@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/layout.css" media="screen">
+    <script type="text/javascript" src="scripts/showPic.js"></script>
+    <title>Image Gallery</title>
+</head>
+
+<body>
+    <h1>Snapshots</h1>
+    <ul>
+        <li>
+            <a  href="images/dog.png" title="A animal" onclick="showPic_2(this);
+            return false;">Dog</a>
+        </li>
+        <li>
+            <a onclick="showPic(this);return false;" href="images/lion.png" title="A animal">Lion</a>
+        </li>
+        <li>
+            <a onclick="showPic(this);return false;" href="images/panda.png" title="A animal">Panda</a>
+        </li>
+        <li>
+            <a onclick="showPic(this);return false;" href="images/rabbit.png" title="A animal">Rabbit</a>
+        </li>
+    </ul>
+    <img  id="placeholder" src="images/dog.png"  alt="my image gallery"/>
+     <p id="description">choose a image</p>
+</body>
+
+</html>
