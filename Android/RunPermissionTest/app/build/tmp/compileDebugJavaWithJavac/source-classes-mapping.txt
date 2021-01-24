@@ -1,0 +1,5 @@
+com/example/runpermissiontest/MainActivity.java
+ com.example.runpermissiontest.MainActivity
+ com.example.runpermissiontest.MainActivity$1
+com/example/runpermissiontest/BuildConfig.java
+ com.example.runpermissiontest.BuildConfig

@@ -1,0 +1,11 @@
+com/example/recycleviewtest/BuildConfig.java
+ com.example.recycleviewtest.BuildConfig
+com/example/recycleviewtest/Animals.java
+ com.example.recycleviewtest.Animals
+com/example/recycleviewtest/MainActivity.java
+ com.example.recycleviewtest.MainActivity
+com/example/recycleviewtest/AnimalsAdapter.java
+ com.example.recycleviewtest.AnimalsAdapter
+ com.example.recycleviewtest.AnimalsAdapter$1
+ com.example.recycleviewtest.AnimalsAdapter$2
+ com.example.recycleviewtest.AnimalsAdapter$ViewHolder

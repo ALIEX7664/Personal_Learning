@@ -1,0 +1,6 @@
+com/example/broadcasttest2/MainActivity.java
+ com.example.broadcasttest2.MainActivity
+com/example/broadcasttest2/AnotherBroadcastReceiver.java
+ com.example.broadcasttest2.AnotherBroadcastReceiver
+com/example/broadcasttest2/BuildConfig.java
+ com.example.broadcasttest2.BuildConfig

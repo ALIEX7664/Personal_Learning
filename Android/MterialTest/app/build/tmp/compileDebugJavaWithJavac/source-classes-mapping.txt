@@ -1,0 +1,17 @@
+com/example/mterialtest/MainActivity.java
+ com.example.mterialtest.MainActivity
+ com.example.mterialtest.MainActivity$1
+ com.example.mterialtest.MainActivity$2
+ com.example.mterialtest.MainActivity$3
+ com.example.mterialtest.MainActivity$3$1
+ com.example.mterialtest.MainActivity$4
+ com.example.mterialtest.MainActivity$4$1
+com/example/mterialtest/AnimalActivity.java
+ com.example.mterialtest.AnimalActivity
+com/example/mterialtest/Animal.java
+ com.example.mterialtest.Animal
+com/example/mterialtest/BuildConfig.java
+ com.example.mterialtest.BuildConfig
+com/example/mterialtest/AnimalAdapter.java
+ com.example.mterialtest.AnimalAdapter
+ com.example.mterialtest.AnimalAdapter$ViewHolder

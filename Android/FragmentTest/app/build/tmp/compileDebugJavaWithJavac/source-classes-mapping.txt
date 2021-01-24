@@ -1,0 +1,10 @@
+com/example/fragmenttest/LeftFragment.java
+ com.example.fragmenttest.LeftFragment
+com/example/fragmenttest/AnotherRightFragment.java
+ com.example.fragmenttest.AnotherRightFragment
+com/example/fragmenttest/RightFragment.java
+ com.example.fragmenttest.RightFragment
+com/example/fragmenttest/BuildConfig.java
+ com.example.fragmenttest.BuildConfig
+com/example/fragmenttest/MainActivity.java
+ com.example.fragmenttest.MainActivity

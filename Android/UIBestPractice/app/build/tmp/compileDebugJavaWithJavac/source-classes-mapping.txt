@@ -1,0 +1,10 @@
+com/example/uibestpractice/Msg.java
+ com.example.uibestpractice.Msg
+com/example/uibestpractice/BuildConfig.java
+ com.example.uibestpractice.BuildConfig
+com/example/uibestpractice/MsgAdapter.java
+ com.example.uibestpractice.MsgAdapter
+ com.example.uibestpractice.MsgAdapter$ViewHolder
+com/example/uibestpractice/MainActivity.java
+ com.example.uibestpractice.MainActivity
+ com.example.uibestpractice.MainActivity$1

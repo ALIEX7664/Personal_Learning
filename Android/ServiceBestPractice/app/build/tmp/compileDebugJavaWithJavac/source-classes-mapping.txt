@@ -1,0 +1,13 @@
+com/example/servicebestpractice/DownloadListener.java
+ com.example.servicebestpractice.DownloadListener
+com/example/servicebestpractice/BuildConfig.java
+ com.example.servicebestpractice.BuildConfig
+com/example/servicebestpractice/DownloadTask.java
+ com.example.servicebestpractice.DownloadTask
+com/example/servicebestpractice/MainActivity.java
+ com.example.servicebestpractice.MainActivity
+ com.example.servicebestpractice.MainActivity$1
+com/example/servicebestpractice/DownloadService.java
+ com.example.servicebestpractice.DownloadService
+ com.example.servicebestpractice.DownloadService$1
+ com.example.servicebestpractice.DownloadService$DownloadBinder

@@ -1,0 +1,5 @@
+com/example/sharedperferencestest/BuildConfig.java
+ com.example.sharedperferencestest.BuildConfig
+com/example/sharedperferencestest/MainActivity.java
+ com.example.sharedperferencestest.MainActivity
+ com.example.sharedperferencestest.MainActivity$1

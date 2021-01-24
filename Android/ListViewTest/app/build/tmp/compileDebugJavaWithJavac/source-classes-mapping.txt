@@ -1,0 +1,10 @@
+com/example/listviewtest/Animal.java
+ com.example.listviewtest.Animal
+com/example/listviewtest/BuildConfig.java
+ com.example.listviewtest.BuildConfig
+com/example/listviewtest/FruitAdapter.java
+ com.example.listviewtest.FruitAdapter
+ com.example.listviewtest.FruitAdapter$ViewHolder
+com/example/listviewtest/MainActivity.java
+ com.example.listviewtest.MainActivity
+ com.example.listviewtest.MainActivity$1

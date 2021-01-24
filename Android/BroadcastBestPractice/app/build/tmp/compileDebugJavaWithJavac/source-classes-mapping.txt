@@ -1,0 +1,14 @@
+com/example/broadcastbestpractice/BuildConfig.java
+ com.example.broadcastbestpractice.BuildConfig
+com/example/broadcastbestpractice/BaseActivity.java
+ com.example.broadcastbestpractice.BaseActivity
+ com.example.broadcastbestpractice.BaseActivity$ForceOfflineReceiver
+ com.example.broadcastbestpractice.BaseActivity$ForceOfflineReceiver$1
+com/example/broadcastbestpractice/LoginActivity.java
+ com.example.broadcastbestpractice.LoginActivity
+ com.example.broadcastbestpractice.LoginActivity$1
+com/example/broadcastbestpractice/ActivityCollector.java
+ com.example.broadcastbestpractice.ActivityCollector
+com/example/broadcastbestpractice/MainActivity.java
+ com.example.broadcastbestpractice.MainActivity
+ com.example.broadcastbestpractice.MainActivity$1

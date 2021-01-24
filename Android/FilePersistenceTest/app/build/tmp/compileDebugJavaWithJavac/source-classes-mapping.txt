@@ -1,0 +1,4 @@
+com/example/filepersistencetest/BuildConfig.java
+ com.example.filepersistencetest.BuildConfig
+com/example/filepersistencetest/MainActivity.java
+ com.example.filepersistencetest.MainActivity

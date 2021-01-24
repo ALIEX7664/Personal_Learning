@@ -1,0 +1,8 @@
+com/example/uicustomviews/BuildConfig.java
+ com.example.uicustomviews.BuildConfig
+com/example/uicustomviews/MainActivity.java
+ com.example.uicustomviews.MainActivity
+com/example/uicustomviews/TitleLayout.java
+ com.example.uicustomviews.TitleLayout
+ com.example.uicustomviews.TitleLayout$1
+ com.example.uicustomviews.TitleLayout$2

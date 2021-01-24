@@ -1,0 +1,15 @@
+com/example/fragmentbestpractice/BuildConfig.java
+ com.example.fragmentbestpractice.BuildConfig
+com/example/fragmentbestpractice/NewsContentFragment.java
+ com.example.fragmentbestpractice.NewsContentFragment
+com/example/fragmentbestpractice/NewsTitleFragment.java
+ com.example.fragmentbestpractice.NewsTitleFragment
+ com.example.fragmentbestpractice.NewsTitleFragment$NewsAdapter
+ com.example.fragmentbestpractice.NewsTitleFragment$NewsAdapter$1
+ com.example.fragmentbestpractice.NewsTitleFragment$NewsAdapter$ViewHolder
+com/example/fragmentbestpractice/News.java
+ com.example.fragmentbestpractice.News
+com/example/fragmentbestpractice/NewsContentActivity.java
+ com.example.fragmentbestpractice.NewsContentActivity
+com/example/fragmentbestpractice/MainActivity.java
+ com.example.fragmentbestpractice.MainActivity

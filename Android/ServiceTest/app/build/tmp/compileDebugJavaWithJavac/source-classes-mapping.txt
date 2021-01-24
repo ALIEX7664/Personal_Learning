@@ -1,0 +1,10 @@
+com/example/servicetest/MyIntentService.java
+ com.example.servicetest.MyIntentService
+com/example/servicetest/BuildConfig.java
+ com.example.servicetest.BuildConfig
+com/example/servicetest/MainActivity.java
+ com.example.servicetest.MainActivity
+ com.example.servicetest.MainActivity$1
+com/example/servicetest/MyService.java
+ com.example.servicetest.MyService
+ com.example.servicetest.MyService$DownloadBinder

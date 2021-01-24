@@ -1,0 +1,150 @@
+[
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_mail.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\drawable-xxhdpi\\mail.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_friends.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\drawable-xxhdpi\\friends.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rabbit.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\drawable\\rabbit.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_call.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\drawable-xxhdpi\\call.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\menu_toolbar.xml.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\menu\\toolbar.xml"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dog.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\drawable\\dog.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\menu_nav_menu.xml.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\menu\\nav_menu.xml"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_setting.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\drawable-xxhdpi\\setting.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\drawable_squirrel.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\drawable\\squirrel.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\layout_animal_item.xml.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\layout\\animal_item.xml"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_animal.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\drawable-xxhdpi\\animal.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_menu.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\drawable-xxhdpi\\menu.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_delete.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\drawable-xxhdpi\\delete.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header.xml.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\layout\\nav_header.xml"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\drawable_panda.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\drawable\\panda.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_location.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\drawable-xxhdpi\\location.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_task.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\drawable-xxhdpi\\task.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lion.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\drawable\\lion.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_backup.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\drawable-xxhdpi\\backup.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_done.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\drawable-xxhdpi\\done.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_animal.xml.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\layout\\activity_animal.xml"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_comment.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\drawable-xxhdpi\\comment.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "E:\\LearningDemo\\Android\\MterialTest\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "E:\\LearningDemo\\Android\\MterialTest\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    }
+]

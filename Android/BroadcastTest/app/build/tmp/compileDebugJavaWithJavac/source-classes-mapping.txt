@@ -1,0 +1,9 @@
+com/example/broadcasttest/BootCompleteReceiver.java
+ com.example.broadcasttest.BootCompleteReceiver
+com/example/broadcasttest/MyReceiver.java
+ com.example.broadcasttest.MyReceiver
+com/example/broadcasttest/BuildConfig.java
+ com.example.broadcasttest.BuildConfig
+com/example/broadcasttest/MainActivity.java
+ com.example.broadcasttest.MainActivity
+ com.example.broadcasttest.MainActivity$1
